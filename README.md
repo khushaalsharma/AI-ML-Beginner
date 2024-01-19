@@ -11,3 +11,14 @@ In Top Down - we model how humans solve a problem ie extracting knowledge and pr
 In Bottom Up - we model how human brain works, consisting of units(neurons) which can be trained together in data to solve problems
 Other approaches - Multi-agent Evolutionary or genetic
 
+Top Down approach is based on two big ideas: Knowledge representation and Reasoning
+We align knowledge concept to DIKW Pyramid(Data, Information, Knowledge and Wisdom)
+Data - Physical media(text, spoken words, etc)
+Information - how we interpret data in our head
+Knowledge - info that is being integrated into world model
+Wisdom - represents meta knowledge
+
+![image](https://github.com/khushaalsharma/AI-ML-Beginner/assets/97724393/03b2a27a-cd11-46b2-a088-61ea7aa3e22e)
+Left side has computable aspects of knowledge representation such as algorithms, semantic rules, production rules, etc
+Right side has representation of knowledge in natural text, cannot be used for automatic reasoning
+
