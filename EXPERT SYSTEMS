@@ -1,0 +1,11 @@
+One of the early success in symbolic AI is expert systems - which are expert in one particular domain and are based on knowledge extracted from an expert on the domain
+Contains inference engine for reasoning
+Architecture : working Memory <-> Inference Engine <- Knowledge Base
+                                          ^
+                                          |
+                                         Man
+
+Problem Memory: contains the knowledge about the problem being solved, called static knowledge - ie problem statement 
+Knowledge Base: Represents the long term knowledge about the problem domain, extracted directly from humans and doesn't change per consultation, called dynamic knowledge as it helps to navigate from one problem to another
+Inference Engine: orchestrates the whole process of running search in the problem space
+
