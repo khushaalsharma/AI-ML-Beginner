@@ -22,3 +22,10 @@ Wisdom - represents meta knowledge
 Left side has computable aspects of knowledge representation such as algorithms, semantic rules, production rules, etc
 Right side has representation of knowledge in natural text, cannot be used for automatic reasoning
 
+Network representation : done by using semantic netwoks/web done in 4 ways
+1) Object-Attribute-Value Triplet
+2) Hierarchical Representation using frames containing slots, each having a default value, value restrictions and stored procedures
+3) Procedural Representation: production rules and algorithms are an example
+4) Logic: Predicate logic and descriptive logic
+
+
