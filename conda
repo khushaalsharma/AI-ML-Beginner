@@ -1,2 +1,12 @@
 Conda is a powerful command line tool for package
 It is a package manager that manages all packages in the software distributor(anaconda or miniconda)
+Anaconda contains all the libraries which are made till now for machine learning (3GB space)
+Mini Conda contains only selected libraries which are needed to begin developing a model (200 MB space)
+
+Conda gives the ability to create the environments for the projects
+To activate this environment
+ $ conda activate "{folder location of env for the particular project}"
+eg: $ conda activate "C:\Users\Khushaal-Sharma\Desktop\ML\sample_project_1\env"
+
+To deactivate an active environment,
+ $ conda deactivate
