@@ -1,0 +1,9 @@
+to execute a cell = Shift + Enter
+to shift the mode of cell from edit to command - esc
+command to edit = enter
+shifting code type to markdown : first tuen cell to command mode then press M
+markdown to code : press Y
+
+Markdown - is used to define the purpose or general statements about the project which might bt important for all the collaborators to know. It is similar to comments
+
+importing image in markdown syntax: ![]({image name in root directory})
