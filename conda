@@ -4,9 +4,23 @@ Anaconda contains all the libraries which are made till now for machine learning
 Mini Conda contains only selected libraries which are needed to begin developing a model (200 MB space)
 
 Conda gives the ability to create the environments for the projects
+Creating a conda env:
+way 1: conda create --prefix ./env {name ofpackages}
 To activate this environment
  $ conda activate "{folder location of env for the particular project}"
 eg: $ conda activate "C:\Users\Khushaal-Sharma\Desktop\ML\sample_project_1\env"
+On writing this command, base prompt will change to the local environment prompt ie the location of project file
+
+way 2: conda create -n env python={version of python you need} {package names}
+
+to activate this environment
+conda activate env
 
 To deactivate an active environment,
  $ conda deactivate
+
+To install a new package/library in the active environment we use,
+ conda install {package_name}
+
+Once the local env is activated on writing jupyter notebook cmd -> it will open a jupyter notebook on the default browser
+Jupyter notebooks are saved with extension - .ipynb 
