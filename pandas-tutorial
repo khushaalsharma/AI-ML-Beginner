@@ -1,0 +1,34 @@
+pandas - used for data analysis and manipulation
+basic data types: 
+-> Series = takes a list as argument, 1D
+  eg: s = pd.Series(["khushaal", "tony", "sheldon"])
+-> DataFrame = takes a dictionary as arg, 2D
+  eg: df = pd.DataFrame({"name" : "Khushaal","age":"20", "Sex":"Male"})
+
+Some commonly used functions
+pd.read_csv() -> reads the csv file memtioned in the brackets as the arg
+csv_file.to_csv("{new file name}.csv") -> exports the data in csv_file object into a csv file with the name given in arg in the root directory
+df.dtypes -> outputs the data types of the keys in the df DataFrame
+
+DESCRIBE DATA
+df.describe() -> gives statistical description of only the columns having numerical data
+df.mean() -> gives teh mean for each column in the df, if any column is not of numeric type, it will raise "TypeError"
+df.mean(numeric_value = True) -> mean of only those columns with numeric data type
+
+df.sum() -> sums of all columns, objects and strings get concatenated and integers/floats are summed
+len() -> returns size of data structure - Series or DataFrame
+
+VIEWING AND SELECTING DATA
+df.head() -> return first five rows along with headings (a quick snapshot)
+df.head(num) -> return num no. of rows
+df.tail() -> last 5 rows
+df.loc[index] -> returns the attributes against the index in df, refers to index
+df.iloc[num] -> returns the attriute at numth position (starting 0), refers to position
+both loc and iloc can use slicing
+
+selecting the column from df
+df[{column name}] or df.{column name}
+      |_> when column name has space
+
+
+
