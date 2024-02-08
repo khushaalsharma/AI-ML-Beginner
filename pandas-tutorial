@@ -3,7 +3,7 @@ basic data types:
 -> Series = takes a list as argument, 1D
   eg: s = pd.Series(["khushaal", "tony", "sheldon"])
 -> DataFrame = takes a dictionary as arg, 2D
-  eg: df = pd.DataFrame({"name" : "Khushaal","age":"20", "Sex":"Male"})
+  eg: df = pd.DataFrame({"name" : "Khushaal","age":"20", "Sex":"Male"}), we can say that DataFrame is collection of Series
 
 Some commonly used functions
 pd.read_csv() -> reads the csv file memtioned in the brackets as the arg
@@ -13,7 +13,7 @@ df.dtypes -> outputs the data types of the keys in the df DataFrame
 DESCRIBE DATA
 df.describe() -> gives statistical description of only the columns having numerical data
 df.mean() -> gives teh mean for each column in the df, if any column is not of numeric type, it will raise "TypeError"
-df.mean(numeric_value = True) -> mean of only those columns with numeric data type
+df.mean(numeric_only = True) -> mean of only those columns with numeric data type
 
 df.sum() -> sums of all columns, objects and strings get concatenated and integers/floats are summed
 len() -> returns size of data structure - Series or DataFrame
@@ -29,6 +29,20 @@ both loc and iloc can use slicing
 selecting the column from df
 df[{column name}] or df.{column name}
       |_> when column name has space
+pandas.crosstab() -> this function kind of aggregates the columns mentioned in the argument dotted with the DataFrame, It finds the common and connects them
+takes only two columns
+df.groupby([{column name}]).{any function} -> groups the data acc to column mentioned and then performs the function on each group
+
+df["{col name}"].plot() -> plots a line graph according to values in col name
+df.["{col name}"].hist() -> plots a histograph
+
+to use plot, mean and other statistical functions over the object dtype attributes, we need to convert them to float or int
+df.["{col name}"].str.replace("{characters that are not nums}", "").astype(int/float)
+
+series.fillna({value to be filled}) -> this function will fill the missing value with mentioned value in arg
+
+
+
 
 
 
