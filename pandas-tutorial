@@ -33,6 +33,8 @@ pandas.crosstab() -> this function kind of aggregates the columns mentioned in t
 takes only two columns
 df.groupby([{column name}]).{any function} -> groups the data acc to column mentioned and then performs the function on each group
 
+
+DATA MANIPULATION USING PANDAS
 df["{col name}"].plot() -> plots a line graph according to values in col name
 df.["{col name}"].hist() -> plots a histograph
 
@@ -41,7 +43,20 @@ df.["{col name}"].str.replace("{characters that are not nums}", "").astype(int/f
 
 series.fillna({value to be filled}) -> this function will fill the missing value with mentioned value in arg
 
+adding new columns to the DataFrame
+1) using Series -> df["{col name}"] = Series_name (Suppose the series has 5 elements and df has 10, then it will assign first rows those nums and others as NaN
+2) using python list -> syntax same, it will throw error if the list size and df size is not same
+3) we canuse current data of df to create a new column as df["{col name}"] = operations(df[col1],....)
+4) creating a column from a single value
 
+
+For deleting the column we use :  df.drop("{col-name}", axis=1), axis attribute gives the location, it atkes values as 0, 1, 'index' and 'column'
+0 or 'index'-> index
+1 or 'column'-> col-name
+
+shuffling(index wise) data in the dataframe -> done to make sure that our machine learning model doesn't form a pattern for data coming in an order
+-> df.sample(frac = 1) -> this will produce an output of whole data being shuffled, frac = 1 means 100% data ie whole data if frac = 0.5 then only 50% of data is shuffled and that shuffled part is shown
+to reset -> df.reset_index()
 
 
 
