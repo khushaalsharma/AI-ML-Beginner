@@ -1,0 +1,17 @@
+numpy - numerical python -> backbone of data science, ML and other fields
+Numpy is used over pure python as helps in doing complex calculations in shorter time as compared to pure python, bcoz of opt in C
+uses vectorization via broadcasting ie avoiding writing loops
+
+Main data type which is most oftenly used from the numpy library is - ndarray ( n dimensional array)
+its attributes: 
+1) shape -> shows the dimensions of the array
+2) ndim -> shows the no. of dimensions
+3) dtype -> shows the data type of elements in the aaray
+4) size -> total no. of elements in the array
+
+normal function (not a member):
+type -> shows the type of array ie ndarray or numpy.ndarray
+
+-> as pandas is built over numpy thus we can use ndarray to create a DataFrame coindition taht ndarray ndimhas to be 2
+
+CREATING ARRAYS USING NUMPY
