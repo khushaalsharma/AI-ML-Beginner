@@ -7,3 +7,5 @@ markdown to code : press Y
 Markdown - is used to define the purpose or general statements about the project which might bt important for all the collaborators to know. It is similar to comments
 
 importing image in markdown syntax: ![]({image name in root directory})
+
+getting information about an inbuilt function by selecting the cell -> press Shift + tab
