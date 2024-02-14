@@ -32,3 +32,29 @@ if we use np.random.seed(seed={a random no}) -> this will keep all the random nu
 It basicaly tells Numpy to generated same set of numbers for a particular seed value
 THIS IS USED WHEN WE SHARE OUR WORK WITH PEOPLE, WE NEED TO MAINTAIN SYNCRONOUSY AMONG ALL THE USERS TO AVOID PROBLEMS
 
+np.unique({array name}) -> this returns a 1d array containing all the unique values in the arg array, arg array can be of any dimension
+
+
+VIEWING THE ARRAYS AND MATRICES (NDARRAYS)
+using the index value -> same as other programming lang
+using the slice operator(:) ->array_name[{start:end+1}, {start:end+1}, so on] -> eacj subsequent pair is the dimension for the array_name, starts with d0 to dn-1
+
+MANIPULATING AND COMPARING ARRAYS
+Arithemtic manipulation:
+Assuming each array has either float or int elements:
++ -> add the corresponding elements  
+- -> sub "
+* -> multiply "
+/ -> divide "
+// -> floor div "
+** -> power " 
+% -> modulus "
+There are also some mathematical functions which take arrays as arg:
+np.add()
+np.square()
+All present here : https://numpy.org/doc/stable/reference/routines.math.html
+
+operand arrays in each case has to be either of same dimension or atleast one should be 1d
+the smaller array is broadcast across the larger array to make sure that they have compatible arrays for operations
+(see jupyter notebook)
+
