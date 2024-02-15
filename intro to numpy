@@ -58,3 +58,17 @@ operand arrays in each case has to be either of same dimension or atleast one sh
 the smaller array is broadcast across the larger array to make sure that they have compatible arrays for operations
 (see jupyter notebook)
 
+Aggregation:
+performing a same func over a number of elements here ndarray
+remember to use numpy methods over numpy data types and python methods over python data types
+=> np.sum(), np.mean(), np.max(), np.min(), np.std(), np.var() -> statistics based methods for a single array as arg
+np.sqrt() -> return square root
+
+Standard Deviation and Variance: -> std(), var()
+
+Reshape and Transpose:
+arr_name.reshape(({new shape})) -> this returns a new ndarray with a new shape conatining all the elements of arr_name, new shape should be such that each elemet of arr_name is added to new array, numpy will neither add nor deduct any element
+arr_name.T
+arr_name.transpose(axes) -> axes can be a tuple of ints or None
+Transpose -> flips the axes around ie in reverse
+reshape -> flips the axes as per new shape such that it satisfies the condition for no. of elements
