@@ -72,3 +72,13 @@ arr_name.T
 arr_name.transpose(axes) -> axes can be a tuple of ints or None
 Transpose -> flips the axes around ie in reverse
 reshape -> flips the axes as per new shape such that it satisfies the condition for no. of elements
+
+DOT PRODUCT -> 1d array : vector dot
+[np.dot(arr1, arr2) ]-> 2D Array : matrix multiplication
+
+ELEMENT WISE PRODUCT OR HADAMARD PRODUCT
+syntax : np.multiply(arr1, arr2) OR arr1 * arr2
+returns a ndarray containing elements as corresponsing elements from the operand arrays are multiplied
+
+COMPARISON OPERATORS
+
