@@ -75,10 +75,20 @@ reshape -> flips the axes as per new shape such that it satisfies the condition 
 
 DOT PRODUCT -> 1d array : vector dot
 [np.dot(arr1, arr2) ]-> 2D Array : matrix multiplication
+OR arr1.dot(arr2) -> other syntax
 
 ELEMENT WISE PRODUCT OR HADAMARD PRODUCT
 syntax : np.multiply(arr1, arr2) OR arr1 * arr2
 returns a ndarray containing elements as corresponsing elements from the operand arrays are multiplied
 
 COMPARISON OPERATORS
+We can compare two ndarrays -> returns an array of higher shaoe of operand ndarray with boolean values
+>, <, <=, >=
+It also follows broadcasting property of Numpy
+
+SORTING ARRAYS
+np.sort(), np.argsort(), np.argmax(), np.argmin(), np.lexsort(), np.nargmax(), np.nargmin()
+
+
+
 
