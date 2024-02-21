@@ -1,0 +1,32 @@
+It is a python library that helps in visual representation of this data from numpy and pandas
+matplotlib.pyplot -> python's equivalent to MATLAB
+
+plt.plot() -> creates the canvas/figure for the plot(graph)
+
+GENERAL WORKFLOW OF MATPLOTLIB
+#0. import matplotlib and get it ready for ploting jupyter
+%matplotlib inline
+import matplotlib.pyplot as plt
+#1. Prepare data
+x = [1,2,3,4]
+y = [11,22,33,44]
+
+#2. setup plot
+fig, ax = plt.subplots(figsize=(10,10)) # height and width of plot
+
+#3 plot the data
+ax.plot(x, y)
+
+#4. customise the plot
+ax.set(title="Simple Plot",
+       xlabel="x-axis",
+       ylabel="y axis")
+
+#4. save and share
+fig.savefig("Numpy Images/sample-plot.png")
+
+types of plots in Matplotlib.pyplot -> line, scatter(dot), bar, histogram
+
+ax is the axes for the figure made using plt.subplots()
+for scatter plot -> ax.scatter() -> various attributes
+for bar plot -> ax.bar() first arg is the values for x axis and 2nd arg is for height against each value on x axis
