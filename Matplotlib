@@ -25,8 +25,15 @@ ax.set(title="Simple Plot",
 #4. save and share
 fig.savefig("Numpy Images/sample-plot.png")
 
-types of plots in Matplotlib.pyplot -> line, scatter(dot), bar, histogram
+types of plots in Matplotlib.pyplot -> line, scatter(dot), bar, histogram, subplots
 
 ax is the axes for the figure made using plt.subplots()
 for scatter plot -> ax.scatter() -> various attributes
 for bar plot -> ax.bar() first arg is the values for x axis and 2nd arg is for height against each value on x axis
+for horizontal bar plot -> ax.barh() -> y and width as mandatory arg, sent as list
+for histograms-> ax.hist()
+for subplots (ie more than one plots at a time) -> 
+       There are two ways to subplot
+              1) Plotting various subplots as fig ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows=2, ncols=2) -> this will create 4 plots within a figure
+                     we can change the number of plots according to our wish by changing the nrows, ncols values and no. of axes
+              2)
