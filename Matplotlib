@@ -36,4 +36,7 @@ for subplots (ie more than one plots at a time) ->
        There are two ways to subplot
               1) Plotting various subplots as fig ((ax1, ax2), (ax3, ax4)) = plt.subplots(nrows=2, ncols=2) -> this will create 4 plots within a figure
                      we can change the number of plots according to our wish by changing the nrows, ncols values and no. of axes
-              2)
+              2) liost index, we assign the whole subplots to a variable ax and access different plots as we access a list element - see in jupyter notebook
+
+MatplotLib and Pandas
+
