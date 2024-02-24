@@ -40,6 +40,8 @@ df.["{col name}"].hist() -> plots a histograph
 
 to use plot, mean and other statistical functions over the object dtype attributes, we need to convert them to float or int
 df.["{col name}"].str.replace("{characters that are not nums}", "").astype(int/float)
+Just to change the characters of the string:
+Series_name.str.replace('{charcters in order as they are in elements}','', regex=True) ✔️
 
 series.fillna({value to be filled}) -> this function will fill the missing value with mentioned value in arg
 
