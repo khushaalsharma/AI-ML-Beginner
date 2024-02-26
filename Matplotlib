@@ -60,4 +60,15 @@ However ❤️
 -> when plotting something quickly, OKAY to USE PYPLOT
 -> when plotting something more advanced, use OO method
 
+Using Object Oriented plotting⭐
+-> fig, ax = plt.subplots(figsize=({size}))
+->plot the data as
+ax.{type of plot scatter, hist, etc)({provide the necessary arguments})
+->label the plot
+ax.set(title, xlabel, ylabel) etc
+->add legends
+ax.legend(choose the parameter which is being used for legend)
+->customize the plot as per requirements
+
+
        
