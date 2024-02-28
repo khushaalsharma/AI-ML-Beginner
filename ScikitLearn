@@ -5,4 +5,13 @@ Scikit learn is the industry standard library for machine learning
 -> in built machine learning models
 -> methods to evaluate machine learning models
 
-MACHINE LEARNING:  
+Scikit Learning Workflow:
+1) Getting the data ready
+2) Choosing the right estimator/algorithm for our problem
+3) Fit the model/algorithm and use it to make predictions on our data
+4) Evaluating the model
+5) improving the model
+6) save and load a trained model
+7) putting it all together
+
+
