@@ -1,0 +1,40 @@
+Scikit learn is the industry standard library for machine learning
+
+-> built on numpy and matplotlib
+-> very well designed API
+-> in built machine learning models
+-> methods to evaluate machine learning models
+
+Scikit Learning Workflow:
+1) Getting the data ready
+2) Choosing the right estimator/algorithm for our problem
+3) Fit the model/algorithm and use it to make predictions on our data
+4) Evaluating the model
+5) improving the model
+6) save and load a trained model
+7) putting it all together
+
+
+Handling the occasional warnings while use Scikit Learn (warnings generally because of an upcoming update or an updated version
+1) For all the warnings in the JUpyter notebook [not preferred usually]
+
+import warnings
+warnings.filterwarnings("ignore") -> this will ignore all the warnings shown by jupyter to the developer
+
+2) set the parameter to the new value which provided in the warning
+3) install the current version of the python dependencies 
+  open the directory of env on the conda terminal
+  write conda list -> this will show all the current packages
+  write conda update {dependency name} -> this will update the dependency to the latest version
+  if it doesn't update we can check which versions are available for update in conda using conda search {dependency name}
+
+
+MORE ABOUT GETTING THE DATA READY, This majorly includes three steps:
+1) split the data into features and labels (usually X and Y)
+2) Filling (also called imputing) or disregarding missing values
+3) Converting non numerical values to numerical ie feature encoding
+
+Scikit Learn has a function, in model_selection module, train_test_split(), it splits the entire data set into training data set and testing data set, it takes mainly 3 args - X, Y, fraction of division eh if test_size = 0.2 testing data set size is 20% of og dataset and rest is trainng dataset
+
+It is recommended to follow the below pattern while getting data ready
+clean data -> transform data -> reduce data (to make sure only required data is used on the model, as we can have low quality data as well)
